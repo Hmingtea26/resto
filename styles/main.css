@@ -1,16 +1,19 @@
 html {
     height: 100%;
+    
 }
 
 body {
+    margin: 0;
     height: 100%;
     display: grid;
-    grid-template-rows: 60rem 30rem 30rem 30rem 20rem;
+    grid-template-rows: 40rem 30rem 30rem 30rem 20rem;
     grid-template-areas: "top-part"
                         "highlights"
                         "testimonials"
                         "contact"
-                        "footer";   
+                        "footer";
+    box-sizing: border-box;   
 }
 
 /***** TOP PART ***************/
@@ -18,7 +21,7 @@ body {
     background-color: #C21010;
 grid-area: top-part;
 display: grid;
-grid-template-rows: 20rem 1fr;
+grid-template-rows: 10rem 1fr;
 grid-template-areas: "header"
                      "intro";
 grid-auto-rows: unset;
@@ -26,10 +29,21 @@ grid-auto-rows: unset;
 
 .header {
 grid-area: header;
+align-content: center;
+}
+
+.resto-name h1 {
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    font-size: 3.5rem;   
+}
+
+nav {
+    display: none;
 }
 
 .intro {
-    background-color: white;
+    
     grid-area: intro;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -42,11 +56,20 @@ grid-area: header;
 
 .comp-logo {
     width: 20rem;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.intro h1 {
-    grid-column: 2 / 3;
+.intro-msg {
+    margin: 8rem auto;
+    text-align: center;
+}
+
+.intro-msg p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
 }
 
 
