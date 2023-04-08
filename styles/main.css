@@ -1,0 +1,88 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60rem 30rem 30rem 30rem 20rem;
+    grid-template-areas: "top-part"
+                        "highlights"
+                        "testimonials"
+                        "contact"
+                        "footer";   
+}
+
+/***** TOP PART ***************/
+.top-part {
+    background-color: #C21010;
+grid-area: top-part;
+display: grid;
+grid-template-rows: 20rem 1fr;
+grid-template-areas: "header"
+                     "intro";
+grid-auto-rows: unset;
+}
+
+.header {
+grid-area: header;
+}
+
+.intro {
+    background-color: white;
+    grid-area: intro;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.intro img {
+    grid-column: 1 / 2;
+}
+
+.comp-logo {
+    width: 20rem;
+    margin: auto;
+}
+
+.intro h1 {
+    grid-column: 2 / 3;
+}
+
+
+
+/***** HIGHLIGHTS ***************/
+.highlights {
+    background-color: #FFFDE3;
+grid-area: highlights;
+
+}
+
+
+
+
+/***** TESTIMONIALS ***************/
+.testimonials {
+    background-color: #E64848;
+grid-area: testimonials;
+
+}
+
+
+
+
+/***** CONTACT ***************/
+.contact {
+    background-color: #CFE8A9;
+grid-area: contact;
+
+}
+
+
+
+/***** FOOTER ***************/
+
+footer {
+    background: black;
+grid-area: footer;
+}
