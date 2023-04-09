@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Malven";
+    src: url("../fonts/Malven.ttf");
+}
+
 html {
     height: 100%;
     
@@ -7,7 +12,7 @@ body {
     margin: 0;
     height: 100%;
     display: grid;
-    grid-template-rows: 40rem 30rem 30rem 30rem 20rem;
+    grid-template-rows: 40rem 60rem 30rem 30rem 20rem;
     grid-template-areas: "top-part"
                         "highlights"
                         "testimonials"
@@ -24,7 +29,6 @@ display: grid;
 grid-template-rows: 10rem 1fr;
 grid-template-areas: "header"
                      "intro";
-grid-auto-rows: unset;
 }
 
 .header {
@@ -60,14 +64,15 @@ nav {
 }
 
 .intro-msg {
-    margin: 8rem auto;
+    margin: 3rem auto;
     text-align: center;
 }
 
 .intro-msg p {
-    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-family: 'malven', sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    line-height:2;
     padding: 0;
     margin: 0;
 }
@@ -78,6 +83,8 @@ nav {
 .highlights {
     background-color: #FFFDE3;
 grid-area: highlights;
+display: grid;
+grid-template-rows: 4rem 1fr;
 
 }
 
