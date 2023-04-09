@@ -12,7 +12,7 @@ body {
     margin: 0;
     height: 100%;
     display: grid;
-    grid-template-rows: 40rem 60rem 30rem 30rem 20rem;
+    grid-template-rows: 40rem 60rem 30rem 15rem 5rem;
     grid-template-areas: "top-part"
                         "highlights"
                         "testimonials"
