@@ -84,14 +84,49 @@ nav {
     background-color: #FFFDE3;
 grid-area: highlights;
 display: grid;
+grid-template-rows: 6rem 1fr;
+grid-template-areas: "words"
+                     "carousel";
 justify-content: center;
 }
 
 .highlights h2 {
     font-family: 'Lilita One', cursive;
     font-size: 3rem;
+    grid-area: words;
+   margin: auto;
 }
 
+.img-carousel {
+    width: 15rem;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+  
+  .carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-items img {
+    flex: 0 0 100%;
+  }
+  
+  .carousel:hover .carousel-items {
+    transform: translateX(-33.33%);
+  }
+  
+  .carousel:hover .carousel-items img:last-child {
+    transform: translateX(-100%);
+  }
+  
+  .carousel:hover .carousel-items img:first-child {
+    transform: translateX(0%);
+  }
 
 
 
@@ -119,4 +154,11 @@ grid-area: contact;
 footer {
     background: black;
 grid-area: footer;
+
+}
+
+footer span {
+    
+    color: white;
+    
 }
