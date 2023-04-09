@@ -71,7 +71,7 @@ nav {
 .intro-msg p {
     color: white;
     font-family: 'malven', sans-serif;
-    font-size: 2rem;
+    font-size: 1.65rem;
     line-height:2;
     padding: 0;
     margin: 0;
@@ -84,8 +84,12 @@ nav {
     background-color: #FFFDE3;
 grid-area: highlights;
 display: grid;
-grid-template-rows: 4rem 1fr;
+justify-content: center;
+}
 
+.highlights h2 {
+    font-family: 'Lilita One', cursive;
+    font-size: 3rem;
 }
 
 
